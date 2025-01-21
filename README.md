@@ -44,3 +44,22 @@ sequenceDiagram
 
     %% Final note: Overall impact
     Note right of Webserver: The goal of the attacker is to exhaust the resources of the Webserver, causing downtime or service disruption.
+
+Attacker:
+The Attacker is responsible for controlling the Botnet. They send commands to the Botnet to initiate the flood of traffic aimed at the Webserver.
+The goal is to create traffic so massive that it overwhelms the Webserver.
+
+Botnet:
+The Botnet is a collection of compromised devices (bots) controlled by the Attacker.
+These bots send a large volume of requests to the target Webserver, significantly contributing to the overall traffic surge.
+The Botnet's size and distributed nature make it difficult to block all sources of the attack.
+
+Webserver:
+The Webserver is the primary target of the attack.
+It receives the massive traffic from the Botnet and attempts to forward the requests to the Firewall for filtering.
+Due to the high volume of requests, the Webserver becomes overwhelmed and might eventually crash or become unresponsive, achieving the DDoS attack's objective.
+
+Firewall:
+The Firewall plays a defensive role, attempting to filter out malicious traffic and prevent the Webserver from becoming overwhelmed.
+It inspects incoming traffic for signs of a DDoS attack and blocks or rates limits requests based on predefined security rules.
+Despite the Firewall's best efforts, the sheer volume of traffic may still lead to the Webserver being overwhelmed.
