@@ -45,5 +45,5 @@ sequenceDiagram
     %% Final note: Overall impact
     Note right of Webserver: The goal of the attacker is to exhaust the resources of the Webserver, causing downtime or service disruption.
 
-The Attacker is responsible for controlling the Botnet. They send commands to the Botnet to initiate the flood of traffic aimed at the Webserver.
-The goal is to create traffic so massive that it overwhelms the Webserver.
+    The Attacker is responsible for controlling the Botnet. They send commands to the Botnet to initiate the flood of traffic aimed at the Webserver.
+    The goal is to create traffic so massive that it overwhelms the Webserver.
