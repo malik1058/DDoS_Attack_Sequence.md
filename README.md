@@ -15,5 +15,3 @@ sequenceDiagram
     Webserver-->>Firewall: Alert: Server is overwhelmed
     Firewall->>Webserver: Continue blocking more traffic
     Webserver->>Webserver: Server crashes or becomes unresponsive
-
-     
