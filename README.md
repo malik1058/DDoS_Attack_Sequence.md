@@ -16,7 +16,7 @@ sequenceDiagram
     Firewall->>Webserver: Continue blocking more traffic
     Webserver->>Webserver: Server crashes or becomes unresponsive
 
-%% Attacker: Controls the Botnet and initiates the DDoS attack.
-%% Botnet: Sends a flood of malicious traffic to overwhelm the Webserver.
-%% Webserver: Receives traffic, forwards it to Firewall, and eventually becomes overwhelmed.
-%% Firewall: Inspects and blocks some malicious traffic but cannot fully prevent the overload.
+%% - **Attacker**: Controls the Botnet and initiates the DDoS attack by sending commands to flood the Webserver with traffic.
+%% - **Botnet**: A network of compromised devices that sends large volumes of malicious traffic to the Webserver.
+%% - **Webserver**: Receives the flood of traffic, attempts to process it, but is overwhelmed by the sheer volume and eventually crashes or becomes unresponsive.
+%% - **Firewall**: Inspects incoming traffic for malicious patterns and blocks some of the requests, but cannot fully stop the DDoS attack due to the scale of traffic.
