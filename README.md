@@ -15,3 +15,9 @@ sequenceDiagram
     Webserver-->>Firewall: Alert: Server is overwhelmed
     Firewall->>Webserver: Continue blocking more traffic
     Webserver->>Webserver: Server crashes or becomes unresponsive
+
+    %% Key Points:
+%% Attacker: Controls the Botnet and initiates the DDoS attack.
+%% Botnet: Sends a flood of malicious traffic to overwhelm the Webserver.
+%% Webserver: Receives traffic, forwards it to Firewall, and eventually becomes overwhelmed.
+%% Firewall: Inspects and blocks some malicious traffic but cannot fully prevent the overload.
